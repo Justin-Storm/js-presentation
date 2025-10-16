@@ -1,0 +1,105 @@
+#about {
+  min-height: 100vh;
+  padding: 60px 10%;
+  background: radial-gradient(circle at top left, #0a0a15, #121225);
+  color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Main header */
+.abt {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section card */
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 25px rgba(255, 122, 245, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 25px rgba(122, 224, 255, 0.2);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Definition text */
+.txt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #dcdcdc;
+  margin-bottom: 1.5rem;
+}
+
+/* Examples label */
+.examples {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7ae0ff;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+  gap: 30px;
+}
+
+.codes p, .codes h4 {
+  margin-bottom: 15px;
+}
+
+/* Code block container */
+.codes pre {
+  background: #0d0f1a;
+  color: #ffbafc;
+  padding: 1.2rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 122, 245, 0.3);
+  transition: background 0.3s ease, border 0.3s ease;
+
+  &.margin  {
+    margin-bottom: 50px;
+  }
+}
+
+.codes pre:hover {
+  background: #10132a;
+  border-color: rgba(122, 224, 255, 0.5);
+}
+
+.codes code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Glow underline animation for headers (optional aesthetic) */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 6px;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  border-radius: 3px;
+}

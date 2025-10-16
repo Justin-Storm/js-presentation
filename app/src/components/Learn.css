@@ -1,0 +1,64 @@
+/* === Quiz Styles === */
+#learn {
+    background: radial-gradient(circle at top left, #0a0a15, #121225);
+    padding: 50px 10%;
+    color: #fff;
+}
+.quiz-question {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 122, 245, 0.2);
+}
+
+.question-text {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.quiz-option {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.quiz-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.feedback {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.feedback.correct {
+  color: #7aff9a;
+}
+
+.feedback.incorrect {
+  color: #ff7a7a;
+}
+
+.quiz-submit {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quiz-submit:hover {
+  background: linear-gradient(90deg, #ff7af5, #7ae0ff);
+}
+
+p.margin  {
+    margin-bottom: 50px;
+  }
