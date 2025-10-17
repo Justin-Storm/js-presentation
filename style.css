@@ -1,0 +1,450 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+.App {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 3;
+
+    div.links {
+        display: flex;
+        gap: 30px;
+        font-weight: bold;
+        
+        a {
+            color: #fff;
+            font-family: 'Montserrat';
+            text-decoration: none;
+            transition: 0.3s ease;
+            position: relative;
+
+            .bar {
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 0;
+                border-radius: 10px;
+                height: 4px;
+                background: #fff;
+                transition: 0.3s ease;
+            }
+
+            &:hover {
+
+                .bar {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    a.logo {
+        color: #fff;
+        font-family: 'Montserrat';
+        text-decoration: none;
+        position: absolute;
+        left: 20px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    a.contactBtn {
+        color: #fff;
+        font-family: 'Montserrat';
+        text-decoration: none;
+        background: linear-gradient(135deg, #0248b3, #9d06d8);
+        padding: 10px 20px;
+        border-radius: 100px;
+        position: absolute;
+        right: 20px;
+        font-weight: bold;
+    }
+}
+
+header#home {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0d6efd, #d400ff);
+
+    .content {
+        text-align: center;
+        font-family: 'Montserrat';
+        color: #fff;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        div.loops {
+            h1 {
+                font-size: 45px;
+            }
+            margin-bottom: 20px;
+        }
+
+        a {
+            padding: 15px 30px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 100px;
+            border: none;
+            background: linear-gradient(135deg, hotpink, violet);
+            transition: 0.3s ease;
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+
+            &:hover {
+                padding: 15px 60px;
+            }
+        }
+    }
+}
+
+#about {
+  min-height: 100vh;
+  padding: 60px 10%;
+  background: radial-gradient(circle at top left, #0a0a15, #121225);
+  color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+  /* Main header */
+.abt {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section card */
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 25px rgba(255, 122, 245, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 25px rgba(122, 224, 255, 0.2);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Definition text */
+.txt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #dcdcdc;
+  margin-bottom: 1.5rem;
+}
+
+/* Examples label */
+.examples {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7ae0ff;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+  gap: 30px;
+}
+
+.codes p, .codes h4 {
+  margin-bottom: 15px;
+}
+
+/* Code block container */
+.codes pre {
+  background: #0d0f1a;
+  color: #ffbafc;
+  padding: 1.2rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 122, 245, 0.3);
+  transition: background 0.3s ease, border 0.3s ease;
+
+  &.margin  {
+    margin-bottom: 50px;
+  }
+}
+
+.codes pre:hover {
+  background: #10132a;
+  border-color: rgba(122, 224, 255, 0.5);
+}
+
+.codes code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Glow underline animation for headers (optional aesthetic) */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 6px;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  border-radius: 3px;
+}
+}
+
+
+/* === Quiz Styles === */
+#learn {
+  min-height: 100vh;
+  padding: 60px 10%;
+  background: radial-gradient(circle at top left, #0a0a15, #121225);
+  color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+
+  
+/* Main header */
+.abt {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section card */
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 25px rgba(255, 122, 245, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 25px rgba(122, 224, 255, 0.2);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Definition text */
+.txt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #dcdcdc;
+  margin-bottom: 1.5rem;
+}
+
+/* Examples label */
+.examples {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7ae0ff;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+  gap: 30px;
+}
+
+/* Code and headings spacing */
+.codes p,
+.codes h4 {
+  margin-bottom: 15px;
+}
+
+/* Code block container */
+.codes pre {
+  background: #0d0f1a;
+  color: #ffbafc;
+  padding: 1.2rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 122, 245, 0.3);
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.codes pre.margin {
+  margin-bottom: 50px;
+}
+
+.codes pre:hover {
+  background: #10132a;
+  border-color: rgba(122, 224, 255, 0.5);
+}
+
+.codes code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Glow underline animation for headers */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 6px;
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  border-radius: 3px;
+}
+
+/* Quiz Question Container */
+.quiz-question {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 25px rgba(255, 122, 245, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.quiz-question:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 25px rgba(122, 224, 255, 0.2);
+}
+
+/* Question text */
+.question-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #dcdcdc;
+}
+
+/* Options */
+.quiz-option {
+  display: block;
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.quiz-option input[type="radio"] {
+  margin-right: 0.6rem;
+}
+
+/* Hover effect on option text */
+.quiz-option:hover {
+  color: #7ae0ff;
+}
+
+/* Feedback messages */
+.feedback {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.feedback.correct {
+  color: #4caf50; /* green for correct */
+}
+
+.feedback.incorrect {
+  color: #f44336; /* red for incorrect */
+}
+
+/* Submit button */
+.quiz-submit {
+  background: linear-gradient(90deg, #7ae0ff, #ff7af5);
+  color: #0a0a15;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quiz-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(122, 224, 255, 0.3);
+}
+
+.quiz-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Make quiz options visually consistent with section text */
+.quiz-question p,
+.quiz-option,
+.feedback {
+  font-family: 'Montserrat', sans-serif;
+}
+}
+
+
+
+

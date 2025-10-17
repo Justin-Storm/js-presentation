@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael & Justin JavaScript Loops & Functions</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="App">
+
+    
+
+<nav>
+    <a href="#home" class="logo">JS</a>
+        <div class="links">
+            <a href="#home">
+                Home
+                <div class="bar"></div>
+            </a>
+            <a href="#about">
+                About
+                <div class="bar"></div>
+            </a>
+            <a href="#learn">
+                Learn
+                <div class="bar"></div>
+            </a>
+        </div>
+    <a class='contactBtn' href='#contact'>Contact</a>
+</nav>
+
+<header id='home'>
+    <div class="content">
+        <h2>&lt;JavaScript /&gt;</h2>
+        <div class="loops">
+            <h1 style="opacity: 1">Loops & Functions</h1>
+            <h1 style="opacity: 0.5">Loops & Functions</h1>
+            <h1 style="opacity: 0.25">Loops & Functions</h1>
+            <h1 style="opacity: 0.1">Loops & Functions</h1>
+        </div>
+        <a href="#about">Learn</a>
+    </div>
+</header>
+
+<section id="about">
+    <h1 class="abt">About</h1>
+
+    <!-- Loops Section -->
+    <div class="section">
+      <h2 class="section-title">🔁 Loops</h2>
+      <p class="txt">
+        Loops are used to repeatedly execute a block of code until a specified condition is met.
+      </p>
+
+      <h3 class="examples">Examples</h3>
+      <div class="codes">
+        <h4>For Loop</h4>
+        <p><strong>Definition:</strong> A <code>for</code> loop repeats a block of code a specific number of times, usually when you know how many times you want it to run.</p>
+        <p><strong>How it works:</strong> It runs the initialization once, checks the condition each time, runs the code if the condition is true, and updates the counter after each run.</p>
+        <pre><code>for (let i = 0; i <= 10; i++) {
+  console.log(`Hello ${i}`);
+}</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre class="margin"><code id="forOutput"></code></pre>
+
+        <h4>While Loop</h4>
+        <p><strong>Definition:</strong> A <code>while</code> loop runs a block of code as long as a specified condition is true, often used when you don't know how many times it should run.</p>
+        <p><strong>How it works:</strong> It checks the condition before each run and keeps looping until the condition becomes false or a <code>break</code> statement stops it.</p>
+        <pre><code>let number = 0;
+while (true) {
+  console.log(`Hello ${number}`);
+  number++;
+  if (number >= 10) {
+    break;
+  }
+}</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre><code id="whileOutput"></code></pre>
+      </div>
+    </div>
+
+    <!-- Functions Section -->
+    <div class="section">
+      <h2 class="section-title">⚙️ Functions</h2>
+      <p class="txt">
+        Functions are reusable blocks of code that perform a specific task. You can define a function once and call it whenever needed.
+      </p>
+
+      <h3 class="examples">Examples</h3>
+      <div class="codes">
+        <h4>Function Declaration</h4>
+        <pre><code>function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("Justin");</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre class="margin"><code id="greetOutput"></code></pre>
+
+        <h4>Arrow Function</h4>
+        <pre><code>const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(5, 3));</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre><code id="addOutput"></code></pre>
+      </div>
+    </div>
+  </section>
+
+<section id="learn">
+    <h1 class="abt">Learn</h1>
+
+    <!-- Variables Section -->
+    <div class="section">
+      <h2 class="section-title">📦 Variables</h2>
+      <p class="txt">
+        Variables store data that can be used and changed during a program’s execution.
+      </p>
+
+      <h3 class="examples">Examples</h3>
+      <div class="codes">
+        <h4>Basic Variable Declaration</h4>
+        <pre>
+<code>let name = "JavaScript";
+let version = 2023;
+console.log("Language:", name);
+console.log("Version:", version);</code>
+        </pre>
+
+        <p><strong>Output:</strong></p>
+        <pre class="margin"><code id="variablesOutput"></code></pre>
+
+        <h4>const vs let</h4>
+        <pre>
+<code>const pi = 3.14;
+let counter = 0;</code>
+        </pre>
+        <p><strong>Explanation:</strong></p>
+        <pre><code id="constLetOutput"></code></pre>
+      </div>
+    </div>
+
+    <!-- 🧠 Quiz Section -->
+    <div class="section">
+      <h2 class="section-title">🧠 Quiz: Loops & Functions</h2>
+      <p class="txt">
+        Test your understanding of loops and functions by answering the following multiple-choice questions.
+      </p>
+
+      <div id="quizContainer"></div>
+      <button class="quiz-submit" id="submitQuiz">Submit Answers</button>
+    </div>
+  </section>
+
+
+
+</div>
+    
+</body>
+</html>
